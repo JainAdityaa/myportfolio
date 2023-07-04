@@ -52,7 +52,7 @@
       <h1><a href="index.html">Aditya Jain</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Software Engineer</span></h2>
+      <h2>I'm a passionate <span class="auto-input"></span></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -894,6 +894,7 @@
   </div>
 
   <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -916,6 +917,16 @@
     function closePopup() {
       popup.classList.remove("open-popup")
     }
+  </script>
+
+  <!-- ------ Auto Typing ------- -->
+  <script>
+    var typed = new Typed(".auto-input",{
+      strings: ["Software Engineer", "Web Developer", "Wordpress Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    })
   </script>
 </body>
 
